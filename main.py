@@ -2,6 +2,18 @@ from bakery import assert_equal
 from drafter import *
 from dataclasses import dataclass
 
+set_website_title("Beam Bending Sim")
+set_site_information(
+    author="Jovan Fankmeni",
+    description="Compare how different materials handle the a beam.",
+    sources="Thanks to the Drafter docs Beam formulas from standard mechanics of materials "
+             "equations.",
+    planning=["brainstorm.pdf", "design.pdf"],
+    links=["https://github.com/jntmfi/beam-bending-sim"]
+)
+hide_debug_information()
+set_website_framed(False)
+
 @dataclass
 class Material:
     """
